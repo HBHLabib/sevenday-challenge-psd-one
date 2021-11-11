@@ -1,0 +1,490 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Mohave', sans-serif;
+}
+
+/* header css */
+
+.main-header{
+    background: url(./banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh;
+    position: relative;
+}
+
+li.nav-item {
+    font-weight: 500 !important;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0 0 0);
+    font-size: 20px;
+    font-weight: 400;
+    width: 100px;
+    text-align: center;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    padding: 20px 0px 0px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.content{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.content h1{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.content p{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.content a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 30px;
+    background: rgb(237,1,252);
+    background: linear-gradient(175deg, rgba(237,1,252,1) 0%, rgba(38,5,38,0.969625350140056) 100%, rgba(254,254,254,1) 100%);
+}
+
+
+.scroll-down{
+    height: 50px;
+    width: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    left: 49%;
+    bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after{
+    top: 30%;
+    animation-delay: .3s;
+}
+
+@keyframes scroll-down{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+
+    60%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        top: 90%;
+    }
+
+}
+
+
+/* About section */
+
+.about-section{
+    background: url(./second-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0px;
+    color: white;
+}
+
+.about-section h2 {
+    font-weight: 300;
+}
+.about-section h2 span{
+    
+font-weight: 600;
+    
+margin-left: -8px;
+}
+.about-section p{
+    line-height: 33px;
+    font-weight: 200;
+}
+.about-section a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 30px;
+    background: rgb(237,1,252);
+    background: linear-gradient(
+    175deg, rgba(237,1,252,1) 0%, rgba(38,5,38,0.969625350140056) 100%, rgba(254,254,254,1) 100%);
+}
+
+/* what we do */
+
+.we-do{
+    padding: 50px 0px;
+}
+.we-do h1{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.we-do img{
+    width: 70px;
+}
+.we-do h3{
+    color: black;
+}
+
+.we-do a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    display: block;
+    border-radius: 30px;
+    background: rgb(237,1,252);
+    background: linear-gradient( 
+    175deg, rgba(237,1,252,1) 0%, rgba(38,5,38,0.969625350140056) 100%, rgba(254,254,254,1) 100%);
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+}
+
+.cst-row {
+    margin-bottom: 30px;
+}
+
+/* slider */
+
+
+
+.cst-this img {
+    display: block;
+    width: 108%;
+}
+
+.img-cst {
+    height: 340px;
+}
+
+.con {
+    position: absolute;
+    top: 130px;
+    left: 465px;
+    width: 30%;
+    color: white;
+    text-align: center;
+}
+.f-cst{
+    position: relative;
+}
+
+.con a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    display: block;
+    border-radius: 30px;
+    background: rgb(237,1,252);
+    background: linear-gradient( 
+    175deg, rgba(237,1,252,1) 0%, rgba(38,5,38,0.969625350140056) 100%, rgba(254,254,254,1) 100%);
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+}
+
+span.fas.fa-caret-square-left {
+    font-size: 40px;
+    color: white !important;
+}
+
+span.fas.fa-caret-square-right {
+    font-size: 40px;
+    color: white !important;
+}
+
+/* about */
+
+.about-us{
+    background: url(./third-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px 100px;
+}
+
+.about-us h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.about-us h3{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: 70px;
+}
+.about-us a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    display: block;
+    border-radius: 30px;
+    background: rgb(237,1,252);
+    background: linear-gradient( 
+    175deg, rgba(237,1,252,1) 0%, rgba(38,5,38,0.969625350140056) 100%, rgba(254,254,254,1) 100%);
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+}
+
+.about-us h4{
+    color: white;
+    margin: 20px 0px;
+}
+.about-us p{
+    color: white;
+    text-transform: capitalize;
+}
+
+/* Footer section */
+
+.footer-section{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(194,194,194,1) 100%);
+    margin-top: -7px;
+}
+
+.concst{}
+.concst h5{margin-top: 30px;font-size: 16px;color: gray;}
+.concst h5 i{}
+
+.icon{}
+.icon ul{
+    list-style: none;
+    text-align: center;
+    padding: 10px 0px 0px;
+}
+.icon ul li{
+    display: inline-block;
+}
+.icon ul li a{
+    color: black;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.icon ul li a i{
+    display: block;
+    background: rgb(30, 31, 30);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+
+/* media css */
+
+@media (max-width:500px){
+    .content h1{
+        font-size: 30px;
+    }
+
+    .content{
+        margin-top: 70px;
+    }
+
+    .content p{
+        font-size: 14px;
+    }
+
+    .content a{
+        padding: 10px 20px;
+    }
+
+    .omg{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .omg-2{
+        text-align: center;
+    }
+
+    .main-header{
+        min-height: 60vh;
+    }
+
+    .omg-3{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .we-do img{
+        margin-bottom: 20px;
+    }
+
+    .omg-4{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .concst{
+        text-align: center;
+    }
+
+    .con{
+        top: 0px;
+        left: 168px;
+    }
+
+    .con h3{
+        font-size: 10px;
+    }
+    .con p{
+        font-size: 10px;
+    }
+    .con a {
+       padding: 0px;
+    }
+
+    .scroll-down{
+        left: 47%;
+    }
+
+}
+
+
+@media (min-width: 501px) and (max-width: 766px) {
+
+    .content h1{
+        font-size: 30px;
+    }
+
+    .content{
+        margin-top: 70px;
+    }
+
+    .content p{
+        font-size: 14px;
+    }
+
+    .content a{
+        padding: 10px 20px;
+    }
+
+    .omg{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .omg-2{
+        text-align: center;
+    }
+
+    .main-header{
+        min-height: 60vh;
+    }
+
+    .omg-3{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .we-do img{
+        margin-bottom: 20px;
+    }
+
+    .omg-4{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .concst{
+        text-align: center;
+    }
+
+    .con{
+        top: 0px;
+        left: 231px;
+    }
+
+    .con h3{
+        font-size: 15px;
+    }
+    .con p{
+        font-size: 15px;
+    }
+    .con a {
+       padding: 5px;
+    }
+
+    .scroll-down{
+        left: 46%;
+    }
+
+}
+
+@media (min-width: 768.01px) and (max-width: 992px) {
+
+    .con{
+        top: 8px;
+        left: 265px;
+    }
+
+    .con h3{
+        font-size: 15px;
+    }
+    .con p{
+        font-size: 15px;
+    }
+    .con a {
+        padding: 10px;
+    }
+
+    .scroll-down{
+        left: 48%;
+    }
+
+}
+
